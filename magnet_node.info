@@ -1,0 +1,6 @@
+name = Magnet Node
+description = Altering some node related behavior.
+package = Magnet
+core = 7.x
+
+dependencies[] = magnet_core

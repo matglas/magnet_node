@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_menu_alter().
+ */
+function magnet_node_menu_alter(&$items) {
+
+  // Disable node page
+  if (magnet_core_feature_enabled('node_list_default')) {
+    if(isset($items['node'])) {
+      $items['node']['access callback'] = FALSE;
+    }
+  }
+
+}
+
+// Implement hook_magnet_feature_enable().
