@@ -4,3 +4,4 @@ package = Magnet
 core = 7.x
 
 dependencies[] = magnet_core
+dependencies[] = pathauto
